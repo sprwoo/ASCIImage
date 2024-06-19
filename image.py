@@ -42,3 +42,5 @@ for i in range(height):
     for j in range(width):
         row += get_density(image_array[i][j])
     print(row)
+
+image.close()
