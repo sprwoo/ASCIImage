@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Constants
-DENSITIES = "   .,-~:;=!*#$@"
+DENSITIES = "    .'`^\",:;Il!i><~+_-?][}{1)(|\\/#MW&8%B@$"
 RESIZE = (50, 50)
 NTSC_CONST = np.array([0.2989, 0.587, 0.114])
 
@@ -30,7 +30,7 @@ def show_image(image):
     plt.show()
 
 if __name__ == '__main__':
-    image_path = 'pfp.png' 
+    image_path = 'daniel.jpg' 
     image = Image.open(image_path)
     image = image.resize(RESIZE)
     show_image(image)
@@ -41,6 +41,4 @@ if __name__ == '__main__':
     convert_to_ascii(image_array)
 
     image.close()
-
-
 
