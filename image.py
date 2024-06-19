@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
-scale = ".,-~:;=!*#$@"
+scale = "   .,-~:;=!*#$@"
 
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.2989, 0.5870, 0.1140])
@@ -10,10 +10,12 @@ def rgb2gray(rgb):
 def get_density(val):
     tmp = round(val / (255 / len(scale)))
     return scale[tmp]
-# val / (255 / 12)
 
-image_path = 'daniel.jpg' 
+image_path = 'pfp.png' 
 image = Image.open(image_path)
+
+newsize = (50, 50)
+image = image.resize(newsize)
 
 # Convert image to a numpy
 image_array = np.array(image)
