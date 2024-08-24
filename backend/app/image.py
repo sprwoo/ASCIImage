@@ -60,6 +60,3 @@ def get_ascii_text(image):
     height, width, channels = image_array.shape
     ascii_image = convert_to_ascii(image_array, height, width, channels)
     return ascii_image
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
