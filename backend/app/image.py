@@ -9,6 +9,10 @@ import math
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+@app.route('/')
+def home():
+    return "Hello, World!"
+
 # Flask upload
 @app.route('/upload', methods=['POST'])
 def upload_file():
