@@ -13,6 +13,10 @@ CORS(app)  # Enable CORS for all routes
 def home():
     return "Hello, World!"
 
+@app.route('/about')
+def home():
+    return "About"
+
 # Flask upload
 @app.route('/upload', methods=['POST'])
 def upload_file():
