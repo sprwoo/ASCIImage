@@ -14,7 +14,7 @@ def home():
     return "Hello, World!"
 
 @app.route('/about')
-def home():
+def about():
     return "About"
 
 # Flask upload
