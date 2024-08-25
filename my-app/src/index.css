@@ -4,4 +4,10 @@ body {
   background-color: #242423;
   color: #E8EDDF;
   font-family: monospace;
+  
+}
+
+p {
+  letter-spacing: 0.5rem;
+  line-height: 1rem;
 }
